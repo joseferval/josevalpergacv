@@ -1,0 +1,178 @@
+/**Establezco fondo del body*/
+body {
+  background-color: #a3b18a;
+  background-image: linear-gradient(#a3b18a, #dad7cd);
+}
+
+/**Selecciono fuente a utilizar*/
+* {
+  box-sizing: border-box;
+  font-family: "Trocchi", serif;
+}
+
+/**Agrega fila vacía*/
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/**Todas las columnas flotan haciua la izquierda*/
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+/**Establezco 12 columnas y su ancho*/
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+/**Para pantallas de menos de 768px las columnas
+se redimensionan al 100%*/
+@media only screen and (max-width: 768px) {
+
+  /* Para celulares: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+/**Texto en los bloques*/
+p,
+table,
+ul,
+h4,
+a {
+  text-align: justify;
+  color: #f9faf8;
+  text-decoration: none;
+}
+
+/**Tamaño y color de la fuente en h1*/
+h1 {
+  color: #f1faee;
+  font-size: 80px;
+  text-align: center;
+}
+
+/**Estilo de subtitulos h3*/
+h3.subtitulo {
+  color: #f1faee;
+  background-color: #344e41;
+  text-align: center;
+}
+
+.titulo_principal {
+  color: #f1faee;
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.titulo_secundario {
+  color: #f1faee;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/**Belleza para algunos contenedores - bordes redondeados
+gradiente de colores*/
+div.belleza_div {
+  border: 1px solid #344e41;
+  border-radius: 10px;
+  background-color: #3a5a40;
+  background-image: linear-gradient(#3a5a40, #588157);
+}
+
+.pie_contacto {
+  color: #f9faf8;
+  text-decoration: none;
+}
+
+/**Marco para el footer*/
+.marco {
+  /*border: 1px solid #344e41;*/
+  border: none;
+  border-radius: 10px;
+  width: 100%;
+  height: 160px;
+}
+
+.transparente {
+  background: none;
+}
+
+/**Foto centrada*/
+.fotocv {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/**Para pantallas de menos de 768px 
+el footer se redimensiona*/
+
+.flexible {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*Diseño responsivo para el flex*/
+@media (max-width: 768px) {
+  .flexible {
+    flex-direction: column;
+  }
+}
